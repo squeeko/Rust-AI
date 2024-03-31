@@ -1,6 +1,6 @@
 extern crate diesel;
 use diesel::pg::PgConnection;
-use diesel::prelude::*;
+//use diesel::prelude::*;
 use dotenv::dotenv;
 use std::env;
 

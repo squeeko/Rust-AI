@@ -6,7 +6,7 @@ use linfa::prelude::*;
 use linfa_reduction::Pca;
 
 fn main() {
-    let dataset = linfa_datasets::diabetes(1599, 11, 1).split_with_ratio(0.8);
+    let dataset = linfa_datasets::diabetes().split_with_ratio(0.8);
     let embedding: Pca<f64> = Pca::params(2).fit(&dataset).unwrap();
     // let embedding = embedding.predict(&dataset);
 
